@@ -1,0 +1,27 @@
+* {
+  text-align: center;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+header {
+  height: 70px;
+  background-color: #f9fafb;
+  margin-top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* --shadow-navbar: rgba(0 0 0 / 0.1); */
+}
+
+input {
+    margin-top: 1rem;
+  font-size: 1.5rem;
+}
+
+input[type="tel" i] {
+  direction: ltr;
+  padding-block: 1px;
+  padding-inline: 2px;
+}

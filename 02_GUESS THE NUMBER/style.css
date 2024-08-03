@@ -1,0 +1,54 @@
+* {
+  text-align: center;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  height: 70px;
+  background-color: #f9fafb;
+  margin-top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* --shadow-navbar: rgba(0 0 0 / 0.1); */
+  border-bottom: 3px solid whitesmoke;
+}
+
+header h1 {
+  font-size: 1.7rem;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+}
+
+input {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  width: 15rem;
+}
+
+.start-game-btn {
+  padding: 10px 16px;
+  background-color: #0ff;
+  border: 1px solid grey;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.sumbmit-btn {
+  padding: 10px 16px;
+  background-color: #0ff;
+  border: 1px solid grey;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}

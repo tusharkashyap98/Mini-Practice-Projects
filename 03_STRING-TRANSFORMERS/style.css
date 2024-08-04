@@ -9,12 +9,11 @@ body {
 
 header {
   height: 70px;
-  background-color: #f9fafb;
+  background-color: lightskyblue;
   margin-top: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* --shadow-navbar: rgba(0 0 0 / 0.1); */
   border-bottom: 3px solid whitesmoke;
 }
 
@@ -41,7 +40,7 @@ input {
   font-size: 1.2rem;
   margin: 1.5rem 0;
   padding: 1.5rem;
-  background-color: rgb(243, 243, 176);
+  background-color: darkgray;
   position: relative;
   text-align: left;
 }

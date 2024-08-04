@@ -8,7 +8,6 @@ const kebabCaseOutput = document.querySelector("#kebab-case span");
 const trimCaseOutput = document.querySelector("#trim-case span");
 
 function capitalizeString(str) {
-  // const firstCharacter =  str[0].toUpperCase()
   if (!str) return str;
   return str[0].toUpperCase() + str.slice(1, str.length);
 }
@@ -55,11 +54,6 @@ function updateScreen() {
 }
 
 updateScreen();
-
-// input.addEventListener("input",(e)=>{
-// // console.log(e.target.value);
-// updateScreen();
-// })
 
 input.addEventListener("input", () => {
   updateScreen();

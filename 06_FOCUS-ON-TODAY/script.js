@@ -12,21 +12,6 @@ const allQuotes = [
   "Whoa! You just completed all the goals, time for chill :D",
 ];
 
-// const allGoals = JSON.parse(localStorage.getItem("allGoals")) || {
-//     first:{
-//         name: "",
-//         completed: false,
-//     },
-//     second:{
-//         name: "",
-//         completed: false,
-//     },
-//     third:{
-//         name: "",
-//         completed: false,
-//     },
-// }
-
 const allGoals = JSON.parse(localStorage.getItem("allGoals")) || {};
 
 let completedGoalsCount = Object.values(allGoals).filter(

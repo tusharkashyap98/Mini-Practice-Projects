@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(33 103 103);
+    background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -7,7 +7,7 @@ body{
     width: 360px;
     padding: 33px;
     text-align: center;
-    background-color: #fff;
+    background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
     margin-left: 33%;
     margin-top: 5px;
 }
@@ -23,7 +23,7 @@ input{
 #btn{
     width: 60px;
     height: 44px;
-    background-color:rgb(33 103 103);
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
     color: white;
     border-radius: 2px;
     border: none;
@@ -33,7 +33,7 @@ input{
 
 .text ul{
    position: relative;
-   background-color: rgb(79, 133, 133);
+   background-image: linear-gradient(to right, #868f96 0%, #596164 100%);
    color: white;
    font-size: 19px;
    text-align: left;
@@ -47,5 +47,5 @@ input{
     position: absolute;
     right: 10px;
     cursor: pointer;
-    background: #a91111;
+    background-image: linear-gradient(45deg, #874da2 0%, #c43a30 100%);
 }

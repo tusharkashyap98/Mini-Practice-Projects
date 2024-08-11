@@ -1,28 +1,41 @@
+
 const btn = document.querySelector("#btn");
-let input = document.querySelector("#input-value");
-let text = document.querySelector(".text");
+const input = document.querySelector("#input");
+const text = document.querySelector(".text");
 
 btn.addEventListener("click", () => {
   add();
 });
 
+const addTask =(newEle) =>{
+  newEle.innerHTML = `${input.value}`;
+  text.appendChild(newEle);
+  input.value = "";
+}
+
+const addDeleteBtn =(deleteBtn, newEle) => {
+  deleteBtn.classList = "deleteBtn";
+  deleteBtn.innerHTML = "Delete";
+  newEle.appendChild(deleteBtn);
+}
+
+const removeTask=(newEle) =>{
+  newEle.remove();
+}
+
+
 function add() {
   if (input.value == "") {
     alert("Please Enter Task");
   } else {
-    let newEle = document.createElement("ul");
-    newEle.innerHTML = `${input.value}`;
-    text.appendChild(newEle);
-    input.value = "";
-    let deleteBtn = document.createElement("button");
-    deleteBtn.classList = "deleteBtn";
-    deleteBtn.innerHTML = "Delete";
-    newEle.appendChild(deleteBtn);
-    function removeTask() {
-      newEle.remove();
-    }
+    const newEle = document.createElement("ul");
+    addTask(newEle);
+
+    const deleteBtn = document.createElement("button");
+    addDeleteBtn(deleteBtn, newEle);
+
     deleteBtn.addEventListener("click", () => {
-      removeTask();
+      removeTask(newEle);
     });
   }
 }

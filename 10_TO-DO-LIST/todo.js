@@ -1,6 +1,6 @@
 
 const btn = document.querySelector("#btn");
-const input = document.querySelector("#input");
+const input = document.querySelector("#input-value");
 const text = document.querySelector(".text");
 
 btn.addEventListener("click", () => {

@@ -1,28 +1,23 @@
-
 const btn = document.querySelector("#btn");
-const input = document.querySelector("#input-value");
+const input = document.querySelector("#input");
 const text = document.querySelector(".text");
 
 btn.addEventListener("click", () => {
   add();
 });
 
-const addTask =(newEle) =>{
-  newEle.innerHTML = `${input.value}`;
+const removeTask = (newEle) => {
+  newEle.remove();
+};
+const addTask = (newEle) => {
+  newEle.innerHTML = `${input.value} <i class="fa-regular fa-trash-can"></i>`;
   text.appendChild(newEle);
   input.value = "";
-}
-
-const addDeleteBtn =(deleteBtn, newEle) => {
-  deleteBtn.classList = "deleteBtn";
-  deleteBtn.innerHTML = "Delete";
-  newEle.appendChild(deleteBtn);
-}
-
-const removeTask=(newEle) =>{
-  newEle.remove();
-}
-
+  newEle.querySelector("i").addEventListener("click", (e) => {
+    e.stopPropagation();
+    removeTask(newEle);
+  });
+};
 
 function add() {
   if (input.value == "") {
@@ -30,13 +25,6 @@ function add() {
   } else {
     const newEle = document.createElement("ul");
     addTask(newEle);
-
-    const deleteBtn = document.createElement("button");
-    addDeleteBtn(deleteBtn, newEle);
-
-    deleteBtn.addEventListener("click", () => {
-      removeTask(newEle);
-    });
   }
 }
 

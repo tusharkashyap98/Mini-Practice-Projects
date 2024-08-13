@@ -43,14 +43,11 @@ input {
   border-radius: 4px;
 }
 
-.deleteBtn {
-  color: white;
+.text ul i{
   position: absolute;
-  right: 10px;
-  cursor: pointer;
-  background-image: linear-gradient(45deg, #874da2 0%, #c43a30 100%);
-  border-radius: 5px;
-}
+  right: 14px;
+ }
+ 
 
 @media (max-width: 768px) {
   h1 {
